@@ -3,12 +3,14 @@ function setup() {
   canvas.position(400, 50);
 }
 
-let value = 210;
+let backgroundValue = 210;
+let strokeValue = 0;
 
 function draw() {
-  background(value);
+  background(backgroundValue);
   strokeWeight(5);
-  fill(210);
+  stroke(strokeValue);
+  fill(backgroundValue);
   strokeJoin(ROUND);
   smooth();
 
@@ -27,5 +29,6 @@ function draw() {
 }
 
 function mouseClicked() {
-  value === 210? value = 0 : value = 210;
+  backgroundValue === 210? backgroundValue = 0 : backgroundValue = 210;
+  strokeValue === 0? strokeValue = 255 : strokeValue = 0;
 }

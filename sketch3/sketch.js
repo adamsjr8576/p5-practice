@@ -1,6 +1,5 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-
   noLoop();
 }
 
@@ -8,11 +7,13 @@ function windowResized () {
   resizeCanvas(windowWidth, windowHeight);
 }
 
+let backgroundValue = 50;
+let fillValue = 200;
+
 function draw() {
-  blendMode(BLEND);
   blendMode(DIFFERENCE);
-  background(0);
-  fill(255);
+  background(backgroundValue);
+  fill(0, 0 ,fillValue);
   noStroke();
 
   let xCenter = width/2;
@@ -42,7 +43,7 @@ function draw() {
   pop()
 
   push()
-    stroke(255);
+    stroke(0, 0, fillValue);
     strokeWeight(5);
     line(xCenter, 0, xCenter - (size+5), yCenter);
     line(xCenter, 0, xCenter - (size+200), yCenter);
@@ -66,11 +67,17 @@ function draw() {
   pop()
 
   push()
-    stroke(255);
+    stroke(0, 0, fillValue);
     strokeWeight(5);
     line(xCenter - (size+5), yCenter, xCenter + size/2, height);
     line(xCenter + (size+5), yCenter, xCenter - size/2, height);
     line(xCenter - (size+200), yCenter, xCenter - size/2, height);
     line(xCenter + (size+200), yCenter, xCenter + size/2, height);
   pop()
+}
+
+function mouseClicked() {
+  backgroundValue === 50? backgroundValue = 200 : backgroundValue = 50;
+  fillValue === 200? fillValue = 20 : fillValue = 200;
+  redraw();
 }

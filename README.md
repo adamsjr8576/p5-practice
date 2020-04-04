@@ -14,4 +14,8 @@
  ## Sketch 3:
  ![sketch3](https://user-images.githubusercontent.com/49846853/78304185-5f238c80-74fb-11ea-866b-bc14203486ec.gif)
  
+ ## Sketch 4:
+ ![sketch4](https://user-images.githubusercontent.com/49846853/78416037-07605080-75e3-11ea-8348-0d970f1e1e30.gif)
  
+ ## Sketch 5:
+ ![sketch5 (1)](https://user-images.githubusercontent.com/49846853/78416036-05968d00-75e3-11ea-9d42-d2fb3ea791d1.gif)

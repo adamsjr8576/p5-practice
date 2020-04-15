@@ -7,14 +7,14 @@ function windowResized () {
 }
 
 function draw() {
-  background(230);
+  background(50);
 
   const xCenter = width/2;
   const yCenter = height/2;
 
   strokeJoin(ROUND);
   strokeWeight(5);
-  stroke(0);
+  stroke(230);
   noFill();
 
   const seconds = millis()/1000;
